@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		598636C7D54D9D4CC0AE7339 /* Pods_MusicDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A89F4F436782A7A9325F32 /* Pods_MusicDay.framework */; };
 		FB022D95231498AC0014362A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022D94231498AC0014362A /* AppDelegate.swift */; };
 		FB022D97231498AC0014362A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022D96231498AC0014362A /* ViewController.swift */; };
 		FB022D9A231498AC0014362A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB022D98231498AC0014362A /* Main.storyboard */; };
 		FB022D9C231498B60014362A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB022D9B231498B60014362A /* Assets.xcassets */; };
 		FB022D9F231498B60014362A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB022D9D231498B60014362A /* LaunchScreen.storyboard */; };
+		FB022DA923149B170014362A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB022DA823149B170014362A /* GoogleService-Info.plist */; };
+		FB022DAC23149CA20014362A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DAB23149CA20014362A /* LoginViewController.swift */; };
+		FB022DAF2314A0270014362A /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DAE2314A0270014362A /* AlertHelper.swift */; };
+		FB022DB12314A2020014362A /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DB02314A2020014362A /* CreateUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17542ECE6DFC149DDF52B471 /* Pods-MusicDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicDay/Pods-MusicDay.debug.xcconfig"; sourceTree = "<group>"; };
+		7496C8A805123A8361721A3A /* Pods-MusicDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicDay/Pods-MusicDay.release.xcconfig"; sourceTree = "<group>"; };
+		C0A89F4F436782A7A9325F32 /* Pods_MusicDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB022D91231498AC0014362A /* MusicDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB022D94231498AC0014362A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB022D96231498AC0014362A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		FB022D9B231498B60014362A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB022D9E231498B60014362A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB022DA0231498B60014362A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB022DA823149B170014362A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FB022DAB23149CA20014362A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FB022DAE2314A0270014362A /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		FB022DB02314A2020014362A /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598636C7D54D9D4CC0AE7339 /* Pods_MusicDay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A5FBEA0C897FDC329DEA15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0A89F4F436782A7A9325F32 /* Pods_MusicDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA3645685DA21F190A3193B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17542ECE6DFC149DDF52B471 /* Pods-MusicDay.debug.xcconfig */,
+				7496C8A805123A8361721A3A /* Pods-MusicDay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FB022D88231498AC0014362A = {
 			isa = PBXGroup;
 			children = (
 				FB022D93231498AC0014362A /* MusicDay */,
 				FB022D92231498AC0014362A /* Products */,
+				BFA3645685DA21F190A3193B /* Pods */,
+				75A5FBEA0C897FDC329DEA15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,34 @@
 		FB022D93231498AC0014362A /* MusicDay */ = {
 			isa = PBXGroup;
 			children = (
+				FB022DAD23149FB50014362A /* Alerts */,
+				FB022DAA23149BEC0014362A /* Auth */,
 				FB022D94231498AC0014362A /* AppDelegate.swift */,
 				FB022D96231498AC0014362A /* ViewController.swift */,
 				FB022D98231498AC0014362A /* Main.storyboard */,
 				FB022D9B231498B60014362A /* Assets.xcassets */,
 				FB022D9D231498B60014362A /* LaunchScreen.storyboard */,
 				FB022DA0231498B60014362A /* Info.plist */,
+				FB022DA823149B170014362A /* GoogleService-Info.plist */,
 			);
 			path = MusicDay;
+			sourceTree = "<group>";
+		};
+		FB022DAA23149BEC0014362A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				FB022DAB23149CA20014362A /* LoginViewController.swift */,
+				FB022DB02314A2020014362A /* CreateUserViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		FB022DAD23149FB50014362A /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				FB022DAE2314A0270014362A /* AlertHelper.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB022DA3231498B60014362A /* Build configuration list for PBXNativeTarget "MusicDay" */;
 			buildPhases = (
+				82EFB022B5D078D7FCF0AA0A /* [CP] Check Pods Manifest.lock */,
 				FB022D8D231498AC0014362A /* Sources */,
 				FB022D8E231498AC0014362A /* Frameworks */,
 				FB022D8F231498AC0014362A /* Resources */,
+				795F12E08AE0C1FA1F7AA6A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB022D9F231498B60014362A /* LaunchScreen.storyboard in Resources */,
+				FB022DA923149B170014362A /* GoogleService-Info.plist in Resources */,
 				FB022D9C231498B60014362A /* Assets.xcassets in Resources */,
 				FB022D9A231498AC0014362A /* Main.storyboard in Resources */,
 			);
@@ -130,11 +185,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		795F12E08AE0C1FA1F7AA6A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MusicDay/Pods-MusicDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicDay/Pods-MusicDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EFB022B5D078D7FCF0AA0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB022D8D231498AC0014362A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB022DAF2314A0270014362A /* AlertHelper.swift in Sources */,
+				FB022DB12314A2020014362A /* CreateUserViewController.swift in Sources */,
+				FB022DAC23149CA20014362A /* LoginViewController.swift in Sources */,
 				FB022D97231498AC0014362A /* ViewController.swift in Sources */,
 				FB022D95231498AC0014362A /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +387,7 @@
 		};
 		FB022DA4231498B60014362A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17542ECE6DFC149DDF52B471 /* Pods-MusicDay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +406,7 @@
 		};
 		FB022DA5231498B60014362A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7496C8A805123A8361721A3A /* Pods-MusicDay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

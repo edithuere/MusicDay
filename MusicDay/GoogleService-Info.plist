@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>248920846963-5jk44rduiibbc40713s97gvjrm7gvihj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.248920846963-5jk44rduiibbc40713s97gvjrm7gvihj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmTJaBAX_2L1x2GGu4FoxRskokU0o1lKI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>248920846963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pe.area51.MusicDay</string>
+	<key>PROJECT_ID</key>
+	<string>musicday-fa6bb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>musicday-fa6bb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:248920846963:ios:2ef188654f83a6cc</string>
+	<key>DATABASE_URL</key>
+	<string>https://musicday-fa6bb.firebaseio.com</string>
+</dict>
+</plist>
