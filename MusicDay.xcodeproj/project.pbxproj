@@ -17,6 +17,9 @@
 		FB022DAC23149CA20014362A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DAB23149CA20014362A /* LoginViewController.swift */; };
 		FB022DAF2314A0270014362A /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DAE2314A0270014362A /* AlertHelper.swift */; };
 		FB022DB12314A2020014362A /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB022DB02314A2020014362A /* CreateUserViewController.swift */; };
+		FBABB9B12314C21A0028A7A2 /* AlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABB9B02314C21A0028A7A2 /* AlbumTableViewCell.swift */; };
+		FBABB9B32314C4C20028A7A2 /* AlbumesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABB9B22314C4C20028A7A2 /* AlbumesTableViewController.swift */; };
+		FBABB9B62314CD460028A7A2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBABB9B52314CD460028A7A2 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		FB022DAB23149CA20014362A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FB022DAE2314A0270014362A /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		FB022DB02314A2020014362A /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		FBABB9B02314C21A0028A7A2 /* AlbumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTableViewCell.swift; sourceTree = "<group>"; };
+		FBABB9B22314C4C20028A7A2 /* AlbumesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumesTableViewController.swift; sourceTree = "<group>"; };
+		FBABB9B52314CD460028A7A2 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 		FB022D93231498AC0014362A /* MusicDay */ = {
 			isa = PBXGroup;
 			children = (
+				FBABB9B42314CD290028A7A2 /* Model */,
+				FBABB9AE2314BCE10028A7A2 /* Artista */,
+				FBABB9AD2314BC980028A7A2 /* Album */,
 				FB022DAD23149FB50014362A /* Alerts */,
 				FB022DAA23149BEC0014362A /* Auth */,
 				FB022D94231498AC0014362A /* AppDelegate.swift */,
@@ -114,6 +123,38 @@
 				FB022DAE2314A0270014362A /* AlertHelper.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		FBABB9AD2314BC980028A7A2 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				FBABB9AF2314C2040028A7A2 /* Cell */,
+				FBABB9B22314C4C20028A7A2 /* AlbumesTableViewController.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		FBABB9AE2314BCE10028A7A2 /* Artista */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Artista;
+			sourceTree = "<group>";
+		};
+		FBABB9AF2314C2040028A7A2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FBABB9B02314C21A0028A7A2 /* AlbumTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FBABB9B42314CD290028A7A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBABB9B52314CD460028A7A2 /* Album.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +282,12 @@
 			files = (
 				FB022DAF2314A0270014362A /* AlertHelper.swift in Sources */,
 				FB022DB12314A2020014362A /* CreateUserViewController.swift in Sources */,
+				FBABB9B12314C21A0028A7A2 /* AlbumTableViewCell.swift in Sources */,
 				FB022DAC23149CA20014362A /* LoginViewController.swift in Sources */,
 				FB022D97231498AC0014362A /* ViewController.swift in Sources */,
+				FBABB9B32314C4C20028A7A2 /* AlbumesTableViewController.swift in Sources */,
 				FB022D95231498AC0014362A /* AppDelegate.swift in Sources */,
+				FBABB9B62314CD460028A7A2 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
