@@ -16,7 +16,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let uid =  UserDefaults.standard.object(forKey: "uid") {
+            let stb = UIStoryboard(name: "Main", bundle: nil)
+            let controller = stb.instantiateViewController(withIdentifier: "tabBarController")
+            self.present(controller, animated: true, completion: nil)
+        }
         
     }
     
@@ -39,6 +43,10 @@ class LoginViewController: UIViewController {
             if let error = error {
                 print(error.localizedDescription)
                 AlertHelper().notificationAlert(title: "Error", message: "Ocurrió un error \(error.localizedDescription)", viewController: self)
+            }
+            if let uid = auth?.user.uid {
+                UserDefaults.standard.set(uid, forKey: "uid")
+                UserDefaults.standard.synchronize()
             }
             //El usuario ya se logueó
             //Mandar a la siguiente vista

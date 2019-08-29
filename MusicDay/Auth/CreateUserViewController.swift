@@ -10,14 +10,14 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
-class CreateUserViewController: UIViewController {
+class CreateUserViewController: UITableViewController {
     @IBOutlet weak var correoTextField: UITextField!
     @IBOutlet weak var contrasenaTextField: UITextField!
+    var ref : DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference()
     }
     
     @IBAction func CrearUsuarioAction(_ sender: Any) {
@@ -36,6 +36,12 @@ class CreateUserViewController: UIViewController {
             if let error = error {
                 AlertHelper().notificationAlert(title: "Error", message: "Ocurrió un error \(error.localizedDescription)", viewController: self)
                 print(error.localizedDescription)
+            }
+            if let uid = auth?.user.uid {
+                let user = User(id: uid, nombre: "", apellidos: "", correo: correo, edad: "")
+                self.ref.child("users")
+                    .child(uid)
+                    .setValue(user.toAny())
             }
             let alert = UIAlertController(title: "Exito", message: "El usuario ha sido creado", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .cancel) { (ac) in

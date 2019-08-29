@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class AlbumesTableViewController: UITableViewController {
     
@@ -17,6 +18,11 @@ class AlbumesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         getAlbumes()
     }
     
@@ -45,7 +51,12 @@ class AlbumesTableViewController: UITableViewController {
         return 145
     }
     
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stb = UIStoryboard(name: "Main", bundle: nil)
+        let controller = stb.instantiateViewController(withIdentifier: "DetalleAlbumVC") as! DetalleAlbumViewController
+        controller.album = self.albumes[indexPath.row]
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
     
     
 
